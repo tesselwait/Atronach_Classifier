@@ -4,6 +4,7 @@ from keras.preprocessing import image
 import numpy as np
 from keras import models
 import tensorflow as tf
+import os
 
 # script will iterate over all .hdf5 and .h5 models in 'directory' and list classification distribution for test images
 f = open('test_set_distributions.txt', 'x')
@@ -15,7 +16,6 @@ filepath_dict = {
     3: 'storm'
 }
 
-import os
 directory = r'**Path to Directory**'
 for filename in os.listdir(directory):
     if filename.endswith(".hdf5") or filename.endswith(".h5"):

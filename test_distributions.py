@@ -26,7 +26,7 @@ for filename in os.listdir(directory):
         z=0
         for y in range(0, 4):
             f.write(str(filepath_dict[y])+'\n')
-            for x in range(1, 100):
+            for x in range(1, 101):
                 img_path = '**Path to Test Image Subdirectory**'+filepath_dict[y]+'\\%i.png' %x
                 img = image.load_img(img_path, target_size=(480, 854)) # models must have uniform image dimensions
                 img_tensor = image.img_to_array(img)

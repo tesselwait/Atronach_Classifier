@@ -17,7 +17,7 @@ from keras import optimizers
 from keras.preprocessing import image
 from keras.preprocessing.image import ImageDataGenerator
 
-base_dir = 'DATASET PATH' #path to image files
+base_dir = 'DATASET_PATH' #path to image files
 test_dir = os.path.join(base_dir, 'test')
 
 test_fire_dir = os.path.join(test_dir, 'fire')

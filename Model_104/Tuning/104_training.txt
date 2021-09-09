@@ -1,0 +1,157 @@
+2021-09-06 14:19:23.950276: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1422 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 760, pci bus id: 0000:01:00.0, compute capability: 3.0)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+conv2d_1 (Conv2D)            (None, 238, 424, 32)      896
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 119, 212, 32)      0
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 119, 212, 32)      0
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 119, 212, 32)      128
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 117, 210, 32)      9248
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 58, 105, 32)       0
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 58, 105, 32)       0
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 58, 105, 32)       128
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 56, 103, 64)       18496
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 28, 51, 64)        0
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 28, 51, 64)        0
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 28, 51, 64)        256
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 26, 49, 128)       73856
+_________________________________________________________________
+max_pooling2d_4 (MaxPooling2 (None, 13, 24, 128)       0
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 13, 24, 128)       0
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 13, 24, 128)       512
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 11, 22, 256)       295168
+_________________________________________________________________
+max_pooling2d_5 (MaxPooling2 (None, 5, 11, 256)        0
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 14080)             0
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 14080)             0
+_________________________________________________________________
+dense_1 (Dense)              (None, 512)               7209472
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 512)               0
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 512)               2048
+_________________________________________________________________
+dense_2 (Dense)              (None, 256)               131328
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 256)               0
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 256)               1024
+_________________________________________________________________
+dense_3 (Dense)              (None, 4)                 1028
+=================================================================
+Total params: 7,743,588
+Trainable params: 7,741,540
+Non-trainable params: 2,048
+_________________________________________________________________
+Found 800 images belonging to 4 classes.
+Found 400 images belonging to 4 classes.
+Epoch 1/30
+2021-09-06 14:19:29.437955: W T:\src\github\tensorflow\tensorflow\core\common_runtime\bfc_allocator.cc:219] Allocator (GPU_0_bfc) ran out of memory trying to allocate 978.24MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+40/40 [==============================] - 63s 2s/step - loss: 0.1505 - acc: 0.9562 - val_loss: 0.2555 - val_acc: 0.9475
+Epoch 00001: val_acc improved from -inf to 0.94750, saving model to checkpoint\checkpoint01-0.947104-2.hdf5
+Epoch 2/30
+40/40 [==============================] - 51s 1s/step - loss: 0.1611 - acc: 0.9475 - val_loss: 0.2162 - val_acc: 0.9500
+Epoch 00002: val_acc improved from 0.94750 to 0.95000, saving model to checkpoint\checkpoint02-0.950104-2.hdf5
+Epoch 3/30
+40/40 [==============================] - 51s 1s/step - loss: 0.1161 - acc: 0.9637 - val_loss: 0.2174 - val_acc: 0.9500
+Epoch 00003: val_acc did not improve from 0.95000
+Epoch 4/30
+40/40 [==============================] - 51s 1s/step - loss: 0.1136 - acc: 0.9650 - val_loss: 0.2147 - val_acc: 0.9500
+Epoch 00004: val_acc did not improve from 0.95000
+Epoch 5/30
+40/40 [==============================] - 53s 1s/step - loss: 0.1255 - acc: 0.9550 - val_loss: 0.2130 - val_acc: 0.9500
+Epoch 00005: val_acc did not improve from 0.95000
+Epoch 6/30
+40/40 [==============================] - 51s 1s/step - loss: 0.1060 - acc: 0.9700 - val_loss: 0.2129 - val_acc: 0.9550
+Epoch 00006: val_acc improved from 0.95000 to 0.95500, saving model to checkpoint\checkpoint06-0.955104-2.hdf5
+Epoch 7/30
+40/40 [==============================] - 51s 1s/step - loss: 0.1253 - acc: 0.9600 - val_loss: 0.1722 - val_acc: 0.9550
+Epoch 00007: val_acc did not improve from 0.95500
+Epoch 8/30
+40/40 [==============================] - 51s 1s/step - loss: 0.1289 - acc: 0.9562 - val_loss: 0.1693 - val_acc: 0.9575
+Epoch 00008: val_acc improved from 0.95500 to 0.95750, saving model to checkpoint\checkpoint08-0.957104-2.hdf5
+Epoch 9/30
+40/40 [==============================] - 51s 1s/step - loss: 0.1304 - acc: 0.9550 - val_loss: 0.1681 - val_acc: 0.9600
+Epoch 00009: val_acc improved from 0.95750 to 0.96000, saving model to checkpoint\checkpoint09-0.960104-2.hdf5
+Epoch 10/30
+40/40 [==============================] - 51s 1s/step - loss: 0.1169 - acc: 0.9550 - val_loss: 0.1681 - val_acc: 0.9550
+Epoch 00010: val_acc did not improve from 0.96000
+Epoch 11/30
+40/40 [==============================] - 56s 1s/step - loss: 0.1227 - acc: 0.9512 - val_loss: 0.1677 - val_acc: 0.9575
+Epoch 00011: val_acc did not improve from 0.96000
+Epoch 12/30
+40/40 [==============================] - 57s 1s/step - loss: 0.1095 - acc: 0.9650 - val_loss: 0.1682 - val_acc: 0.9525
+Epoch 00012: val_acc did not improve from 0.96000
+Epoch 13/30
+40/40 [==============================] - 58s 1s/step - loss: 0.1104 - acc: 0.9612 - val_loss: 0.1680 - val_acc: 0.9550
+Epoch 00013: val_acc did not improve from 0.96000
+Epoch 14/30
+40/40 [==============================] - 56s 1s/step - loss: 0.1222 - acc: 0.9600 - val_loss: 0.1670 - val_acc: 0.9525
+Epoch 00014: val_acc did not improve from 0.96000
+Epoch 15/30
+40/40 [==============================] - 56s 1s/step - loss: 0.0935 - acc: 0.9625 - val_loss: 0.1661 - val_acc: 0.9575
+Epoch 00015: val_acc did not improve from 0.96000
+Epoch 16/30
+40/40 [==============================] - 55s 1s/step - loss: 0.1117 - acc: 0.9675 - val_loss: 0.1646 - val_acc: 0.9575
+Epoch 00016: val_acc did not improve from 0.96000
+Epoch 17/30
+40/40 [==============================] - 54s 1s/step - loss: 0.1274 - acc: 0.9575 - val_loss: 0.1655 - val_acc: 0.9525
+Epoch 00017: val_acc did not improve from 0.96000
+Epoch 18/30
+40/40 [==============================] - 55s 1s/step - loss: 0.1326 - acc: 0.9587 - val_loss: 0.1655 - val_acc: 0.9550
+Epoch 00018: val_acc did not improve from 0.96000
+Epoch 19/30
+40/40 [==============================] - 57s 1s/step - loss: 0.1307 - acc: 0.9587 - val_loss: 0.1665 - val_acc: 0.9550
+Epoch 00019: val_acc did not improve from 0.96000
+Epoch 20/30
+40/40 [==============================] - 57s 1s/step - loss: 0.0896 - acc: 0.9750 - val_loss: 0.1672 - val_acc: 0.9550
+Epoch 00020: val_acc did not improve from 0.96000
+Epoch 21/30
+40/40 [==============================] - 57s 1s/step - loss: 0.1167 - acc: 0.9625 - val_loss: 0.1657 - val_acc: 0.9525
+Epoch 00021: val_acc did not improve from 0.96000
+Epoch 22/30
+40/40 [==============================] - 56s 1s/step - loss: 0.1153 - acc: 0.9675 - val_loss: 0.1643 - val_acc: 0.9525
+Epoch 00022: val_acc did not improve from 0.96000
+Epoch 23/30
+40/40 [==============================] - 55s 1s/step - loss: 0.1159 - acc: 0.9675 - val_loss: 0.1648 - val_acc: 0.9550
+Epoch 00023: val_acc did not improve from 0.96000
+Epoch 24/30
+40/40 [==============================] - 55s 1s/step - loss: 0.1104 - acc: 0.9612 - val_loss: 0.1627 - val_acc: 0.9525
+Epoch 00024: val_acc did not improve from 0.96000
+Epoch 25/30
+40/40 [==============================] - 55s 1s/step - loss: 0.0748 - acc: 0.9737 - val_loss: 0.1644 - val_acc: 0.9525
+Epoch 00025: val_acc did not improve from 0.96000
+Epoch 26/30
+40/40 [==============================] - 55s 1s/step - loss: 0.1438 - acc: 0.9550 - val_loss: 0.1613 - val_acc: 0.9575
+Epoch 00026: val_acc did not improve from 0.96000
+Epoch 27/30
+40/40 [==============================] - 55s 1s/step - loss: 0.1024 - acc: 0.9687 - val_loss: 0.1612 - val_acc: 0.9575
+Epoch 00027: val_acc did not improve from 0.96000
+Epoch 28/30
+40/40 [==============================] - 55s 1s/step - loss: 0.1138 - acc: 0.9587 - val_loss: 0.1608 - val_acc: 0.9575
+Epoch 00028: val_acc did not improve from 0.96000
+Epoch 29/30
+40/40 [==============================] - 54s 1s/step - loss: 0.1081 - acc: 0.9675 - val_loss: 0.1577 - val_acc: 0.9600
+Epoch 00029: val_acc did not improve from 0.96000
+Epoch 30/30
+40/40 [==============================] - 54s 1s/step - loss: 0.1170 - acc: 0.9625 - val_loss: 0.1568 - val_acc: 0.9575
+Epoch 00030: val_acc did not improve from 0.96000
+Found 400 images belonging to 4 classes.
+test acc: 0.9399999946355819

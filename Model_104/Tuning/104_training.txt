@@ -63,7 +63,6 @@ _________________________________________________________________
 Found 800 images belonging to 4 classes.
 Found 400 images belonging to 4 classes.
 Epoch 1/30
-2021-09-06 14:19:29.437955: W T:\src\github\tensorflow\tensorflow\core\common_runtime\bfc_allocator.cc:219] Allocator (GPU_0_bfc) ran out of memory trying to allocate 978.24MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
 40/40 [==============================] - 63s 2s/step - loss: 0.1505 - acc: 0.9562 - val_loss: 0.2555 - val_acc: 0.9475
 Epoch 00001: val_acc improved from -inf to 0.94750, saving model to checkpoint\checkpoint01-0.947104-2.hdf5
 Epoch 2/30

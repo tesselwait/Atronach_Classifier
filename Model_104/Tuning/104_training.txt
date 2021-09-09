@@ -154,3 +154,5 @@ Epoch 30/30
 Epoch 00030: val_acc did not improve from 0.96000
 Found 400 images belonging to 4 classes.
 test acc: 0.9399999946355819
+
+** Non-Terminal Annotation: Checkpoint weights from this program, 'checkpoint09-0.960104-2.hdf5', tested at 0.9425 accuracy. **

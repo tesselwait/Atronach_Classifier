@@ -13,5 +13,5 @@ https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/firs
 The dataset can be downloaded here: https://drive.google.com/drive/folders/1tzlcE12NWN0O9W_b6o8PaxBmmfAlgnLE  
 **Image spoilers of in game locations.**
 
-New 2,400 image dataset with a 'guard' and 'bear category added:                                                                                                         
+New 2,400 image dataset with a 'guard' and 'bear' category added:                                                                                                         
 https://drive.google.com/drive/folders/1ia7SKSN7MiWZXavNZkXkml-gSMGvSqAf

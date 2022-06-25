@@ -16,5 +16,4 @@ The dataset can be downloaded here: https://drive.google.com/drive/folders/1tzlc
 **Image spoilers of in game locations.**
 
 New 2,400 image dataset with a 'guard' and 'bear category added:
-
 https://drive.google.com/drive/folders/1ia7SKSN7MiWZXavNZkXkml-gSMGvSqAf

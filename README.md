@@ -2,6 +2,7 @@ Deep Learning model trained to classify images of Atronachs in the video game Th
 The dataset consisted of 1,600 images: 800 training, 400 validation, and 400 testing.
 
 *One storm atronach image was included in both the training(153) and test(77) set.  This adds 1/400 or 0.25% error to the listed results.
+
 *One frost atronach image was included in both the validation(78) and test(77) set.
 
 
@@ -15,4 +16,5 @@ The dataset can be downloaded here: https://drive.google.com/drive/folders/1tzlc
 **Image spoilers of in game locations.**
 
 New 2,400 image dataset with a 'guard' and 'bear category added:
+
 https://drive.google.com/drive/folders/1ia7SKSN7MiWZXavNZkXkml-gSMGvSqAf

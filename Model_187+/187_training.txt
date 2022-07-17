@@ -679,4 +679,4 @@ Epoch 127/140
 60/60 [==============================] - ETA: 0s - loss: 0.7894 - acc: 0.7100
 Epoch 127: val
 
-** Non-terminal annotation, program crashed **
+** Non-terminal annotation,  terminal output cutoff**

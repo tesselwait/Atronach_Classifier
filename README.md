@@ -4,14 +4,15 @@ The dataset consisted of 1,600 images: 800 training, 400 validation, and 400 tes
 *One frost atronach image was included in both the validation(78) and test(77) set.
 
 
-
 Base program taken from Deep Learning with Python by François Chollet.
 https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/first_edition/5.2-using-convnets-with-small-datasets.ipynb
-
 
 
 The dataset can be downloaded here: https://drive.google.com/drive/folders/1tzlcE12NWN0O9W_b6o8PaxBmmfAlgnLE  
 **Image spoilers of in game locations.**
 
-New 2,400 image dataset with a 'guard' and 'bear' category added(labeled with '+'):                                                                                       
-https://drive.google.com/drive/folders/1ia7SKSN7MiWZXavNZkXkml-gSMGvSqAf - now at 2,800 with 'draugr' added.
+2,800 image dataset with a 'guard', 'bear', and 'draugr' category added(labeled with '+'):                                                                                       
+https://drive.google.com/drive/folders/1ia7SKSN7MiWZXavNZkXkml-gSMGvSqAf
+
+4,000 image 10 category dataset extracted from video capture. 480x854 (labeled with '~')
+https://drive.google.com/drive/folders/1x9R7Y4RUXOSLu8rqh5Foi7v1N-IMeKpJ

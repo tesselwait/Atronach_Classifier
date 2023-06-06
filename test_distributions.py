@@ -27,7 +27,7 @@ for filename in os.listdir(directory):
         for y in range(0, len(filepath_dict)):
             f.write(str(filepath_dict[y])+'\n')
             for x in range(1, 101):
-                img_path = '**Path to Test Image Subdirectory**'+filepath_dict[y]+'\\%i.png' %x
+                img_path = '**Path to Test Image Subdirectory**'+filepath_dict[y]+'\\test-'+filepath_dict[y]+'-%i.png' %x
                 img = image.load_img(img_path, target_size=(480, 854)) # models must have uniform image dimensions
                 img_tensor = image.img_to_array(img)
                 img_tensor = np.expand_dims(img_tensor, axis=0)
@@ -37,6 +37,7 @@ for filename in os.listdir(directory):
                 #for i in range(0, len(filepath_dict)):
                  #   f.write(str(filepath_dict[i])+': {:.0%}'.format(answer[i])+', ') #writing all classifications
                 if np.argmax(answer) != y:
+                    f.write(str(x)+' -- ')
                     z=z+1
                     for i in range(0, len(filepath_dict)):
                         f.write(str(filepath_dict[i])+': {:.0%}'.format(answer[i])+', ') # writing only misclassifications

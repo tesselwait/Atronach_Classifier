@@ -24,7 +24,7 @@ for filename in os.listdir(directory):
         print(filename)
         f.write(filename+"\n")
         z=0
-        for y in range(0, 4):
+        for y in range(0, len(filepath_dict)):
             f.write(str(filepath_dict[y])+'\n')
             for x in range(1, 101):
                 img_path = '**Path to Test Image Subdirectory**'+filepath_dict[y]+'\\%i.png' %x
@@ -34,10 +34,13 @@ for filename in os.listdir(directory):
                 img_tensor /= 255.
                 answer = model.predict(img_tensor)
                 answer = answer.flatten()
-                f.write("Answer: "+str(np.argmax(answer))+"  Distribution: "+str(x)+': '+'{:.0%}'.format(answer[0])+', '+'{:.0%}'.format(answer[1])+', '+'{:.0%}'.format(answer[2])+', '+'{:.0%}'.format(answer[3])+'\n') # writing all classifications
+                #for i in range(0, len(filepath_dict)):
+                 #   f.write(str(filepath_dict[i])+': {:.0%}'.format(answer[i])+', ') #writing all classifications
                 if np.argmax(answer) != y:
                     z=z+1
-                    #f.write(str(x)+': '+'{:.0%}'.format(answer[0])+', '+'{:.0%}'.format(answer[1])+', '+'{:.0%}'.format(answer[2])+', '+'{:.0%}'.format(answer[3])+'\n') # writing only misclassifications
+                    for i in range(0, len(filepath_dict)):
+                        f.write(str(filepath_dict[i])+': {:.0%}'.format(answer[i])+', ') # writing only misclassifications
+                    f.write('\n')
             f.write('\n')
         f.write("Misclassified: "+str(z)+" images.\n")
         f.write("\n")

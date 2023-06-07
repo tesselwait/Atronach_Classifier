@@ -3,7 +3,7 @@ Deep Learning model trained to classify images of Atronachs in the video game Th
 Base program taken from Deep Learning with Python by François Chollet.
 https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/first_edition/5.2-using-convnets-with-small-datasets.ipynb
 
-1,600 image 4 category dataset:
+1,600 image 4 category dataset:                                                                 
 https://drive.google.com/drive/folders/1tzlcE12NWN0O9W_b6o8PaxBmmfAlgnLE  
 
 2,800 image dataset with a 'guard', 'bear', and 'draugr' category added(labeled with '+'):                                                                                       

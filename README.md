@@ -9,7 +9,7 @@ https://drive.google.com/drive/folders/1tzlcE12NWN0O9W_b6o8PaxBmmfAlgnLE
 2,800 image dataset with a 'guard', 'bear', and 'draugr' category added(labeled with '+'):                                                                                       
 https://drive.google.com/drive/folders/1ia7SKSN7MiWZXavNZkXkml-gSMGvSqAf
 
-4,000 image 10 category dataset extracted from video capture. 480x854 (labeled with '~'):
+4,800 image 12 category dataset extracted from video capture. 480x854 (labeled with '~'):
 https://drive.google.com/drive/folders/1x9R7Y4RUXOSLu8rqh5Foi7v1N-IMeKpJ
 
 **Image spoilers of in game locations.**

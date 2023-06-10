@@ -1,0 +1,858 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ conv2d (Conv2D)             (None, 148, 148, 32)      896
+
+ dropout (Dropout)           (None, 148, 148, 32)      0
+
+ max_pooling2d (MaxPooling2D  (None, 74, 74, 32)       0
+ )
+
+ batch_normalization (BatchN  (None, 74, 74, 32)       128
+ ormalization)
+
+ conv2d_1 (Conv2D)           (None, 72, 72, 64)        18496
+
+ max_pooling2d_1 (MaxPooling  (None, 36, 36, 64)       0
+ 2D)
+
+ flatten (Flatten)           (None, 82944)             0
+
+ dropout_1 (Dropout)         (None, 82944)             0
+
+ dense (Dense)               (None, 64)                5308480
+
+ dropout_2 (Dropout)         (None, 64)                0
+
+ batch_normalization_1 (Batc  (None, 64)               256
+ hNormalization)
+
+ dense_1 (Dense)             (None, 32)                2080
+
+ dropout_3 (Dropout)         (None, 32)                0
+
+ batch_normalization_2 (Batc  (None, 32)               128
+ hNormalization)
+
+ dense_2 (Dense)             (None, 12)                396
+
+=================================================================
+Total params: 5,330,860
+Trainable params: 5,330,604
+Non-trainable params: 256
+_________________________________________________________________
+Found 2400 images belonging to 12 classes.
+Found 1200 images belonging to 12 classes.
+data batch shape: (20, 150, 150, 3)
+labels batch shape: (20, 12)
+C:\*********\skyrim_classifier.py:161: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
+  history = model.fit_generator(
+Epoch 1/200
+2023-06-09 01:53:23.361940: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8401
+2023-06-09 01:53:24.856869: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+120/120 [==============================] - ETA: 0s - loss: 2.5460 - acc: 0.1746
+Epoch 1: val_acc improved from -inf to 0.09083, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 17s 111ms/step - loss: 2.5460 - acc: 0.1746 - val_loss: 2.5573 - val_acc: 0.0908
+Epoch 2/200
+120/120 [==============================] - ETA: 0s - loss: 2.0803 - acc: 0.2942
+Epoch 2: val_acc improved from 0.09083 to 0.17000, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 109ms/step - loss: 2.0803 - acc: 0.2942 - val_loss: 2.4970 - val_acc: 0.1700
+Epoch 3/200
+120/120 [==============================] - ETA: 0s - loss: 1.8190 - acc: 0.3854
+Epoch 3: val_acc did not improve from 0.17000
+120/120 [==============================] - 13s 108ms/step - loss: 1.8190 - acc: 0.3854 - val_loss: 2.2851 - val_acc: 0.1558
+Epoch 4/200
+120/120 [==============================] - ETA: 0s - loss: 1.6508 - acc: 0.4429
+Epoch 4: val_acc improved from 0.17000 to 0.41667, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 109ms/step - loss: 1.6508 - acc: 0.4429 - val_loss: 1.8503 - val_acc: 0.4167
+Epoch 5/200
+120/120 [==============================] - ETA: 0s - loss: 1.6427 - acc: 0.4271
+Epoch 5: val_acc did not improve from 0.41667
+120/120 [==============================] - 13s 107ms/step - loss: 1.6427 - acc: 0.4271 - val_loss: 1.6400 - val_acc: 0.4133
+Epoch 6/200
+120/120 [==============================] - ETA: 0s - loss: 1.4889 - acc: 0.4933
+Epoch 6: val_acc improved from 0.41667 to 0.54000, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 109ms/step - loss: 1.4889 - acc: 0.4933 - val_loss: 1.4307 - val_acc: 0.5400
+Epoch 7/200
+120/120 [==============================] - ETA: 0s - loss: 1.7557 - acc: 0.3846
+Epoch 7: val_acc did not improve from 0.54000
+120/120 [==============================] - 13s 107ms/step - loss: 1.7557 - acc: 0.3846 - val_loss: 1.8932 - val_acc: 0.3125
+Epoch 8/200
+120/120 [==============================] - ETA: 0s - loss: 1.5239 - acc: 0.4604
+Epoch 8: val_acc did not improve from 0.54000
+120/120 [==============================] - 13s 108ms/step - loss: 1.5239 - acc: 0.4604 - val_loss: 1.9188 - val_acc: 0.3700
+Epoch 9/200
+120/120 [==============================] - ETA: 0s - loss: 1.4019 - acc: 0.5204
+Epoch 9: val_acc did not improve from 0.54000
+120/120 [==============================] - 13s 107ms/step - loss: 1.4019 - acc: 0.5204 - val_loss: 1.9492 - val_acc: 0.3592
+Epoch 10/200
+120/120 [==============================] - ETA: 0s - loss: 1.4245 - acc: 0.4996
+Epoch 10: val_acc did not improve from 0.54000
+120/120 [==============================] - 13s 108ms/step - loss: 1.4245 - acc: 0.4996 - val_loss: 1.6247 - val_acc: 0.4175
+Epoch 11/200
+120/120 [==============================] - ETA: 0s - loss: 1.3318 - acc: 0.5392
+Epoch 11: val_acc did not improve from 0.54000
+120/120 [==============================] - 13s 107ms/step - loss: 1.3318 - acc: 0.5392 - val_loss: 2.1640 - val_acc: 0.3392
+Epoch 12/200
+120/120 [==============================] - ETA: 0s - loss: 1.2686 - acc: 0.5717
+Epoch 12: val_acc did not improve from 0.54000
+120/120 [==============================] - 13s 108ms/step - loss: 1.2686 - acc: 0.5717 - val_loss: 1.7057 - val_acc: 0.4158
+Epoch 13/200
+120/120 [==============================] - ETA: 0s - loss: 1.1787 - acc: 0.5971
+Epoch 13: val_acc did not improve from 0.54000
+120/120 [==============================] - 13s 106ms/step - loss: 1.1787 - acc: 0.5971 - val_loss: 1.3257 - val_acc: 0.5367
+Epoch 14/200
+120/120 [==============================] - ETA: 0s - loss: 1.1534 - acc: 0.6175
+Epoch 14: val_acc improved from 0.54000 to 0.59667, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 109ms/step - loss: 1.1534 - acc: 0.6175 - val_loss: 1.1046 - val_acc: 0.5967
+Epoch 15/200
+120/120 [==============================] - ETA: 0s - loss: 1.1206 - acc: 0.6271
+Epoch 15: val_acc did not improve from 0.59667
+120/120 [==============================] - 13s 107ms/step - loss: 1.1206 - acc: 0.6271 - val_loss: 1.1644 - val_acc: 0.5750
+Epoch 16/200
+120/120 [==============================] - ETA: 0s - loss: 1.1136 - acc: 0.6158
+Epoch 16: val_acc did not improve from 0.59667
+120/120 [==============================] - 13s 108ms/step - loss: 1.1136 - acc: 0.6158 - val_loss: 1.6922 - val_acc: 0.4392
+Epoch 17/200
+120/120 [==============================] - ETA: 0s - loss: 1.0570 - acc: 0.6413
+Epoch 17: val_acc did not improve from 0.59667
+120/120 [==============================] - 13s 107ms/step - loss: 1.0570 - acc: 0.6413 - val_loss: 1.2178 - val_acc: 0.5475
+Epoch 18/200
+120/120 [==============================] - ETA: 0s - loss: 1.0128 - acc: 0.6654
+Epoch 18: val_acc improved from 0.59667 to 0.63000, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 109ms/step - loss: 1.0128 - acc: 0.6654 - val_loss: 1.0370 - val_acc: 0.6300
+Epoch 19/200
+120/120 [==============================] - ETA: 0s - loss: 1.1250 - acc: 0.6200
+Epoch 19: val_acc did not improve from 0.63000
+120/120 [==============================] - 13s 109ms/step - loss: 1.1250 - acc: 0.6200 - val_loss: 1.5340 - val_acc: 0.4850
+Epoch 20/200
+120/120 [==============================] - ETA: 0s - loss: 1.0713 - acc: 0.6317
+Epoch 20: val_acc did not improve from 0.63000
+120/120 [==============================] - 13s 108ms/step - loss: 1.0713 - acc: 0.6317 - val_loss: 1.3779 - val_acc: 0.5358
+Epoch 21/200
+120/120 [==============================] - ETA: 0s - loss: 1.0009 - acc: 0.6550
+Epoch 21: val_acc did not improve from 0.63000
+120/120 [==============================] - 13s 112ms/step - loss: 1.0009 - acc: 0.6550 - val_loss: 1.1262 - val_acc: 0.5917
+Epoch 22/200
+120/120 [==============================] - ETA: 0s - loss: 0.9571 - acc: 0.6750
+Epoch 22: val_acc improved from 0.63000 to 0.68500, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 108ms/step - loss: 0.9571 - acc: 0.6750 - val_loss: 0.9499 - val_acc: 0.6850
+Epoch 23/200
+120/120 [==============================] - ETA: 0s - loss: 1.0401 - acc: 0.6475
+Epoch 23: val_acc did not improve from 0.68500
+120/120 [==============================] - 13s 107ms/step - loss: 1.0401 - acc: 0.6475 - val_loss: 0.8765 - val_acc: 0.6833
+Epoch 24/200
+120/120 [==============================] - ETA: 0s - loss: 0.9556 - acc: 0.6804
+Epoch 24: val_acc did not improve from 0.68500
+120/120 [==============================] - 13s 108ms/step - loss: 0.9556 - acc: 0.6804 - val_loss: 0.9273 - val_acc: 0.6575
+Epoch 25/200
+120/120 [==============================] - ETA: 0s - loss: 0.8909 - acc: 0.6888
+Epoch 25: val_acc did not improve from 0.68500
+120/120 [==============================] - 13s 109ms/step - loss: 0.8909 - acc: 0.6888 - val_loss: 0.9630 - val_acc: 0.6608
+Epoch 26/200
+120/120 [==============================] - ETA: 0s - loss: 0.8624 - acc: 0.7175
+Epoch 26: val_acc did not improve from 0.68500
+120/120 [==============================] - 13s 108ms/step - loss: 0.8624 - acc: 0.7175 - val_loss: 1.1816 - val_acc: 0.5617
+Epoch 27/200
+120/120 [==============================] - ETA: 0s - loss: 0.8359 - acc: 0.7225
+Epoch 27: val_acc did not improve from 0.68500
+120/120 [==============================] - 13s 107ms/step - loss: 0.8359 - acc: 0.7225 - val_loss: 0.9434 - val_acc: 0.6675
+Epoch 28/200
+120/120 [==============================] - ETA: 0s - loss: 0.8537 - acc: 0.7212
+Epoch 28: val_acc did not improve from 0.68500
+120/120 [==============================] - 13s 108ms/step - loss: 0.8537 - acc: 0.7212 - val_loss: 1.4633 - val_acc: 0.5658
+Epoch 29/200
+120/120 [==============================] - ETA: 0s - loss: 0.8134 - acc: 0.7337
+Epoch 29: val_acc did not improve from 0.68500
+120/120 [==============================] - 13s 107ms/step - loss: 0.8134 - acc: 0.7337 - val_loss: 0.9698 - val_acc: 0.6483
+Epoch 30/200
+120/120 [==============================] - ETA: 0s - loss: 0.8103 - acc: 0.7325
+Epoch 30: val_acc did not improve from 0.68500
+120/120 [==============================] - 13s 111ms/step - loss: 0.8103 - acc: 0.7325 - val_loss: 1.2375 - val_acc: 0.5850
+Epoch 31/200
+120/120 [==============================] - ETA: 0s - loss: 0.7921 - acc: 0.7321
+Epoch 31: val_acc did not improve from 0.68500
+120/120 [==============================] - 14s 114ms/step - loss: 0.7921 - acc: 0.7321 - val_loss: 0.8896 - val_acc: 0.6767
+Epoch 32/200
+120/120 [==============================] - ETA: 0s - loss: 0.9465 - acc: 0.6829
+Epoch 32: val_acc did not improve from 0.68500
+120/120 [==============================] - 14s 116ms/step - loss: 0.9465 - acc: 0.6829 - val_loss: 1.6526 - val_acc: 0.4650
+Epoch 33/200
+120/120 [==============================] - ETA: 0s - loss: 0.8093 - acc: 0.7296
+Epoch 33: val_acc improved from 0.68500 to 0.79250, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 14s 115ms/step - loss: 0.8093 - acc: 0.7296 - val_loss: 0.6432 - val_acc: 0.7925
+Epoch 34/200
+120/120 [==============================] - ETA: 0s - loss: 0.7400 - acc: 0.7588
+Epoch 34: val_acc did not improve from 0.79250
+120/120 [==============================] - 13s 108ms/step - loss: 0.7400 - acc: 0.7588 - val_loss: 1.5927 - val_acc: 0.5317
+Epoch 35/200
+120/120 [==============================] - ETA: 0s - loss: 0.7487 - acc: 0.7462
+Epoch 35: val_acc improved from 0.79250 to 0.79833, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 112ms/step - loss: 0.7487 - acc: 0.7462 - val_loss: 0.6035 - val_acc: 0.7983
+Epoch 36/200
+120/120 [==============================] - ETA: 0s - loss: 0.7100 - acc: 0.7696
+Epoch 36: val_acc did not improve from 0.79833
+120/120 [==============================] - 13s 108ms/step - loss: 0.7100 - acc: 0.7696 - val_loss: 0.6438 - val_acc: 0.7925
+Epoch 37/200
+120/120 [==============================] - ETA: 0s - loss: 0.7571 - acc: 0.7429
+Epoch 37: val_acc did not improve from 0.79833
+120/120 [==============================] - 13s 108ms/step - loss: 0.7571 - acc: 0.7429 - val_loss: 1.0934 - val_acc: 0.6308
+Epoch 38/200
+120/120 [==============================] - ETA: 0s - loss: 0.6720 - acc: 0.7850
+Epoch 38: val_acc did not improve from 0.79833
+120/120 [==============================] - 14s 114ms/step - loss: 0.6720 - acc: 0.7850 - val_loss: 0.7633 - val_acc: 0.7375
+Epoch 39/200
+120/120 [==============================] - ETA: 0s - loss: 0.6955 - acc: 0.7683
+Epoch 39: val_acc did not improve from 0.79833
+120/120 [==============================] - 14s 113ms/step - loss: 0.6955 - acc: 0.7683 - val_loss: 1.1309 - val_acc: 0.6600
+Epoch 40/200
+120/120 [==============================] - ETA: 0s - loss: 0.6799 - acc: 0.7758
+Epoch 40: val_acc improved from 0.79833 to 0.82167, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 110ms/step - loss: 0.6799 - acc: 0.7758 - val_loss: 0.5748 - val_acc: 0.8217
+Epoch 41/200
+120/120 [==============================] - ETA: 0s - loss: 0.6747 - acc: 0.7738
+Epoch 41: val_acc did not improve from 0.82167
+120/120 [==============================] - 13s 107ms/step - loss: 0.6747 - acc: 0.7738 - val_loss: 0.9473 - val_acc: 0.6958
+Epoch 42/200
+120/120 [==============================] - ETA: 0s - loss: 0.6483 - acc: 0.7942
+Epoch 42: val_acc did not improve from 0.82167
+120/120 [==============================] - 13s 110ms/step - loss: 0.6483 - acc: 0.7942 - val_loss: 1.5728 - val_acc: 0.5767
+Epoch 43/200
+120/120 [==============================] - ETA: 0s - loss: 0.6479 - acc: 0.7842
+Epoch 43: val_acc did not improve from 0.82167
+120/120 [==============================] - 13s 108ms/step - loss: 0.6479 - acc: 0.7842 - val_loss: 1.4869 - val_acc: 0.5825
+Epoch 44/200
+120/120 [==============================] - ETA: 0s - loss: 0.6467 - acc: 0.7854
+Epoch 44: val_acc improved from 0.82167 to 0.83917, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 109ms/step - loss: 0.6467 - acc: 0.7854 - val_loss: 0.5054 - val_acc: 0.8392
+Epoch 45/200
+120/120 [==============================] - ETA: 0s - loss: 0.6043 - acc: 0.8021
+Epoch 45: val_acc did not improve from 0.83917
+120/120 [==============================] - 13s 108ms/step - loss: 0.6043 - acc: 0.8021 - val_loss: 0.4982 - val_acc: 0.8308
+Epoch 46/200
+120/120 [==============================] - ETA: 0s - loss: 0.6062 - acc: 0.7958
+Epoch 46: val_acc did not improve from 0.83917
+120/120 [==============================] - 14s 115ms/step - loss: 0.6062 - acc: 0.7958 - val_loss: 0.8481 - val_acc: 0.7258
+Epoch 47/200
+120/120 [==============================] - ETA: 0s - loss: 0.6595 - acc: 0.7800
+Epoch 47: val_acc did not improve from 0.83917
+120/120 [==============================] - 13s 110ms/step - loss: 0.6595 - acc: 0.7800 - val_loss: 1.6256 - val_acc: 0.5333
+Epoch 48/200
+120/120 [==============================] - ETA: 0s - loss: 0.8164 - acc: 0.7471
+Epoch 48: val_acc did not improve from 0.83917
+120/120 [==============================] - 13s 108ms/step - loss: 0.8164 - acc: 0.7471 - val_loss: 1.7981 - val_acc: 0.4783
+Epoch 49/200
+120/120 [==============================] - ETA: 0s - loss: 0.7550 - acc: 0.7538
+Epoch 49: val_acc did not improve from 0.83917
+120/120 [==============================] - 13s 109ms/step - loss: 0.7550 - acc: 0.7538 - val_loss: 1.1096 - val_acc: 0.6092
+Epoch 50/200
+120/120 [==============================] - ETA: 0s - loss: 0.6583 - acc: 0.7812
+Epoch 50: val_acc did not improve from 0.83917
+120/120 [==============================] - 13s 108ms/step - loss: 0.6583 - acc: 0.7812 - val_loss: 1.2015 - val_acc: 0.6167
+Epoch 51/200
+120/120 [==============================] - ETA: 0s - loss: 0.6360 - acc: 0.7942
+Epoch 51: val_acc did not improve from 0.83917
+120/120 [==============================] - 13s 107ms/step - loss: 0.6360 - acc: 0.7942 - val_loss: 0.8329 - val_acc: 0.7242
+Epoch 52/200
+120/120 [==============================] - ETA: 0s - loss: 0.5677 - acc: 0.8196
+Epoch 52: val_acc improved from 0.83917 to 0.85917, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 111ms/step - loss: 0.5677 - acc: 0.8196 - val_loss: 0.4728 - val_acc: 0.8592
+Epoch 53/200
+120/120 [==============================] - ETA: 0s - loss: 0.6143 - acc: 0.8029
+Epoch 53: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 108ms/step - loss: 0.6143 - acc: 0.8029 - val_loss: 0.4684 - val_acc: 0.8542
+Epoch 54/200
+120/120 [==============================] - ETA: 0s - loss: 1.3537 - acc: 0.5829
+Epoch 54: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 107ms/step - loss: 1.3537 - acc: 0.5829 - val_loss: 2.0901 - val_acc: 0.4850
+Epoch 55/200
+120/120 [==============================] - ETA: 0s - loss: 0.7582 - acc: 0.7475
+Epoch 55: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 107ms/step - loss: 0.7582 - acc: 0.7475 - val_loss: 1.1393 - val_acc: 0.6283
+Epoch 56/200
+120/120 [==============================] - ETA: 0s - loss: 0.6229 - acc: 0.8017
+Epoch 56: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 107ms/step - loss: 0.6229 - acc: 0.8017 - val_loss: 0.9058 - val_acc: 0.6908
+Epoch 57/200
+120/120 [==============================] - ETA: 0s - loss: 0.5893 - acc: 0.8004
+Epoch 57: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 111ms/step - loss: 0.5893 - acc: 0.8004 - val_loss: 0.8404 - val_acc: 0.6858
+Epoch 58/200
+120/120 [==============================] - ETA: 0s - loss: 0.5908 - acc: 0.8125
+Epoch 58: val_acc did not improve from 0.85917
+120/120 [==============================] - 14s 112ms/step - loss: 0.5908 - acc: 0.8125 - val_loss: 0.7661 - val_acc: 0.7358
+Epoch 59/200
+120/120 [==============================] - ETA: 0s - loss: 0.5397 - acc: 0.8242
+Epoch 59: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 108ms/step - loss: 0.5397 - acc: 0.8242 - val_loss: 0.8947 - val_acc: 0.6892
+Epoch 60/200
+120/120 [==============================] - ETA: 0s - loss: 0.5645 - acc: 0.8142
+Epoch 60: val_acc did not improve from 0.85917
+120/120 [==============================] - 14s 117ms/step - loss: 0.5645 - acc: 0.8142 - val_loss: 0.8522 - val_acc: 0.7175
+Epoch 61/200
+120/120 [==============================] - ETA: 0s - loss: 0.5370 - acc: 0.8208
+Epoch 61: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 110ms/step - loss: 0.5370 - acc: 0.8208 - val_loss: 0.6538 - val_acc: 0.7908
+Epoch 62/200
+120/120 [==============================] - ETA: 0s - loss: 0.5458 - acc: 0.8217
+Epoch 62: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 111ms/step - loss: 0.5458 - acc: 0.8217 - val_loss: 0.6495 - val_acc: 0.7708
+Epoch 63/200
+120/120 [==============================] - ETA: 0s - loss: 0.6217 - acc: 0.7912
+Epoch 63: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 110ms/step - loss: 0.6217 - acc: 0.7912 - val_loss: 0.5682 - val_acc: 0.8192
+Epoch 64/200
+120/120 [==============================] - ETA: 0s - loss: 0.5508 - acc: 0.8204
+Epoch 64: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 110ms/step - loss: 0.5508 - acc: 0.8204 - val_loss: 0.5374 - val_acc: 0.8200
+Epoch 65/200
+120/120 [==============================] - ETA: 0s - loss: 0.4875 - acc: 0.8487
+Epoch 65: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 109ms/step - loss: 0.4875 - acc: 0.8487 - val_loss: 0.6188 - val_acc: 0.7908
+Epoch 66/200
+120/120 [==============================] - ETA: 0s - loss: 0.5081 - acc: 0.8363
+Epoch 66: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 110ms/step - loss: 0.5081 - acc: 0.8363 - val_loss: 0.8981 - val_acc: 0.7067
+Epoch 67/200
+120/120 [==============================] - ETA: 0s - loss: 0.4986 - acc: 0.8413
+Epoch 67: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 110ms/step - loss: 0.4986 - acc: 0.8413 - val_loss: 0.5870 - val_acc: 0.8067
+Epoch 68/200
+120/120 [==============================] - ETA: 0s - loss: 0.4919 - acc: 0.8429
+Epoch 68: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 111ms/step - loss: 0.4919 - acc: 0.8429 - val_loss: 0.7851 - val_acc: 0.7292
+Epoch 69/200
+120/120 [==============================] - ETA: 0s - loss: 0.4573 - acc: 0.8462
+Epoch 69: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 109ms/step - loss: 0.4573 - acc: 0.8462 - val_loss: 0.4770 - val_acc: 0.8392
+Epoch 70/200
+120/120 [==============================] - ETA: 0s - loss: 0.4522 - acc: 0.8533
+Epoch 70: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 108ms/step - loss: 0.4522 - acc: 0.8533 - val_loss: 0.5234 - val_acc: 0.8458
+Epoch 71/200
+120/120 [==============================] - ETA: 0s - loss: 0.5345 - acc: 0.8233
+Epoch 71: val_acc did not improve from 0.85917
+120/120 [==============================] - 13s 109ms/step - loss: 0.5345 - acc: 0.8233 - val_loss: 1.3544 - val_acc: 0.5733
+Epoch 72/200
+120/120 [==============================] - ETA: 0s - loss: 0.4640 - acc: 0.8567
+Epoch 72: val_acc improved from 0.85917 to 0.86250, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 110ms/step - loss: 0.4640 - acc: 0.8567 - val_loss: 0.4228 - val_acc: 0.8625
+Epoch 73/200
+120/120 [==============================] - ETA: 0s - loss: 0.4359 - acc: 0.8546
+Epoch 73: val_acc did not improve from 0.86250
+120/120 [==============================] - 13s 109ms/step - loss: 0.4359 - acc: 0.8546 - val_loss: 0.6465 - val_acc: 0.7867
+Epoch 74/200
+120/120 [==============================] - ETA: 0s - loss: 0.4709 - acc: 0.8438
+Epoch 74: val_acc did not improve from 0.86250
+120/120 [==============================] - 13s 109ms/step - loss: 0.4709 - acc: 0.8438 - val_loss: 0.6547 - val_acc: 0.7808
+Epoch 75/200
+120/120 [==============================] - ETA: 0s - loss: 0.5309 - acc: 0.8192
+Epoch 75: val_acc did not improve from 0.86250
+120/120 [==============================] - 13s 109ms/step - loss: 0.5309 - acc: 0.8192 - val_loss: 1.0273 - val_acc: 0.6525
+Epoch 76/200
+120/120 [==============================] - ETA: 0s - loss: 0.4796 - acc: 0.8483
+Epoch 76: val_acc improved from 0.86250 to 0.87917, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 111ms/step - loss: 0.4796 - acc: 0.8483 - val_loss: 0.3811 - val_acc: 0.8792
+Epoch 77/200
+120/120 [==============================] - ETA: 0s - loss: 0.4792 - acc: 0.8400
+Epoch 77: val_acc did not improve from 0.87917
+120/120 [==============================] - 13s 110ms/step - loss: 0.4792 - acc: 0.8400 - val_loss: 0.4631 - val_acc: 0.8467
+Epoch 78/200
+120/120 [==============================] - ETA: 0s - loss: 0.4097 - acc: 0.8708
+Epoch 78: val_acc did not improve from 0.87917
+120/120 [==============================] - 13s 109ms/step - loss: 0.4097 - acc: 0.8708 - val_loss: 0.8012 - val_acc: 0.7325
+Epoch 79/200
+120/120 [==============================] - ETA: 0s - loss: 0.4657 - acc: 0.8508
+Epoch 79: val_acc did not improve from 0.87917
+120/120 [==============================] - 13s 109ms/step - loss: 0.4657 - acc: 0.8508 - val_loss: 0.9857 - val_acc: 0.7167
+Epoch 80/200
+120/120 [==============================] - ETA: 0s - loss: 0.4390 - acc: 0.8546
+Epoch 80: val_acc did not improve from 0.87917
+120/120 [==============================] - 13s 109ms/step - loss: 0.4390 - acc: 0.8546 - val_loss: 0.6132 - val_acc: 0.8358
+Epoch 81/200
+120/120 [==============================] - ETA: 0s - loss: 0.4413 - acc: 0.8525
+Epoch 81: val_acc did not improve from 0.87917
+120/120 [==============================] - 13s 109ms/step - loss: 0.4413 - acc: 0.8525 - val_loss: 0.8083 - val_acc: 0.7333
+Epoch 82/200
+120/120 [==============================] - ETA: 0s - loss: 0.4425 - acc: 0.8554
+Epoch 82: val_acc improved from 0.87917 to 0.91833, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 110ms/step - loss: 0.4425 - acc: 0.8554 - val_loss: 0.2525 - val_acc: 0.9183
+Epoch 83/200
+120/120 [==============================] - ETA: 0s - loss: 0.4273 - acc: 0.8637
+Epoch 83: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 110ms/step - loss: 0.4273 - acc: 0.8637 - val_loss: 0.6276 - val_acc: 0.7808
+Epoch 84/200
+120/120 [==============================] - ETA: 0s - loss: 0.3972 - acc: 0.8729
+Epoch 84: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3972 - acc: 0.8729 - val_loss: 0.4192 - val_acc: 0.8558
+Epoch 85/200
+120/120 [==============================] - ETA: 0s - loss: 0.4420 - acc: 0.8621
+Epoch 85: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.4420 - acc: 0.8621 - val_loss: 0.6296 - val_acc: 0.7875
+Epoch 86/200
+120/120 [==============================] - ETA: 0s - loss: 0.4474 - acc: 0.8579
+Epoch 86: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.4474 - acc: 0.8579 - val_loss: 1.2172 - val_acc: 0.6933
+Epoch 87/200
+120/120 [==============================] - ETA: 0s - loss: 1.3036 - acc: 0.6283
+Epoch 87: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 1.3036 - acc: 0.6283 - val_loss: 1.1029 - val_acc: 0.6183
+Epoch 88/200
+120/120 [==============================] - ETA: 0s - loss: 0.9823 - acc: 0.6983
+Epoch 88: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.9823 - acc: 0.6983 - val_loss: 0.6380 - val_acc: 0.7958
+Epoch 89/200
+120/120 [==============================] - ETA: 0s - loss: 0.8434 - acc: 0.7242
+Epoch 89: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.8434 - acc: 0.7242 - val_loss: 0.9146 - val_acc: 0.7033
+Epoch 90/200
+120/120 [==============================] - ETA: 0s - loss: 0.7045 - acc: 0.7608
+Epoch 90: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.7045 - acc: 0.7608 - val_loss: 0.4709 - val_acc: 0.8600
+Epoch 91/200
+120/120 [==============================] - ETA: 0s - loss: 0.7778 - acc: 0.7487
+Epoch 91: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.7778 - acc: 0.7487 - val_loss: 2.7351 - val_acc: 0.3700
+Epoch 92/200
+120/120 [==============================] - ETA: 0s - loss: 0.6299 - acc: 0.8012
+Epoch 92: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.6299 - acc: 0.8012 - val_loss: 1.6316 - val_acc: 0.5150
+Epoch 93/200
+120/120 [==============================] - ETA: 0s - loss: 0.5766 - acc: 0.8188
+Epoch 93: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.5766 - acc: 0.8188 - val_loss: 1.0085 - val_acc: 0.7083
+Epoch 94/200
+120/120 [==============================] - ETA: 0s - loss: 0.5434 - acc: 0.8271
+Epoch 94: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 110ms/step - loss: 0.5434 - acc: 0.8271 - val_loss: 0.6108 - val_acc: 0.8192
+Epoch 95/200
+120/120 [==============================] - ETA: 0s - loss: 0.5376 - acc: 0.8217
+Epoch 95: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.5376 - acc: 0.8217 - val_loss: 1.7518 - val_acc: 0.5383
+Epoch 96/200
+120/120 [==============================] - ETA: 0s - loss: 0.5209 - acc: 0.8292
+Epoch 96: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.5209 - acc: 0.8292 - val_loss: 1.0532 - val_acc: 0.6500
+Epoch 97/200
+120/120 [==============================] - ETA: 0s - loss: 0.6121 - acc: 0.7996
+Epoch 97: val_acc did not improve from 0.91833
+120/120 [==============================] - 14s 115ms/step - loss: 0.6121 - acc: 0.7996 - val_loss: 0.9368 - val_acc: 0.7033
+Epoch 98/200
+120/120 [==============================] - ETA: 0s - loss: 0.5119 - acc: 0.8392
+Epoch 98: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 111ms/step - loss: 0.5119 - acc: 0.8392 - val_loss: 0.4956 - val_acc: 0.8392
+Epoch 99/200
+120/120 [==============================] - ETA: 0s - loss: 0.5193 - acc: 0.8325
+Epoch 99: val_acc did not improve from 0.91833
+120/120 [==============================] - 14s 116ms/step - loss: 0.5193 - acc: 0.8325 - val_loss: 0.6125 - val_acc: 0.8100
+Epoch 100/200
+120/120 [==============================] - ETA: 0s - loss: 0.4869 - acc: 0.8383
+Epoch 100: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 110ms/step - loss: 0.4869 - acc: 0.8383 - val_loss: 0.5462 - val_acc: 0.8192
+Epoch 101/200
+120/120 [==============================] - ETA: 0s - loss: 0.4751 - acc: 0.8471
+Epoch 101: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.4751 - acc: 0.8471 - val_loss: 0.5942 - val_acc: 0.8317
+Epoch 102/200
+120/120 [==============================] - ETA: 0s - loss: 0.4617 - acc: 0.8475
+Epoch 102: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.4617 - acc: 0.8475 - val_loss: 0.6726 - val_acc: 0.8058
+Epoch 103/200
+120/120 [==============================] - ETA: 0s - loss: 0.4910 - acc: 0.8396
+Epoch 103: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.4910 - acc: 0.8396 - val_loss: 0.9719 - val_acc: 0.7025
+Epoch 104/200
+120/120 [==============================] - ETA: 0s - loss: 0.4598 - acc: 0.8600
+Epoch 104: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.4598 - acc: 0.8600 - val_loss: 0.7715 - val_acc: 0.7633
+Epoch 105/200
+120/120 [==============================] - ETA: 0s - loss: 0.4471 - acc: 0.8562
+Epoch 105: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.4471 - acc: 0.8562 - val_loss: 0.5216 - val_acc: 0.8467
+Epoch 106/200
+120/120 [==============================] - ETA: 0s - loss: 0.4608 - acc: 0.8558
+Epoch 106: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.4608 - acc: 0.8558 - val_loss: 0.5024 - val_acc: 0.8467
+Epoch 107/200
+120/120 [==============================] - ETA: 0s - loss: 0.4398 - acc: 0.8592
+Epoch 107: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.4398 - acc: 0.8592 - val_loss: 0.6087 - val_acc: 0.8442
+Epoch 108/200
+120/120 [==============================] - ETA: 0s - loss: 0.4132 - acc: 0.8654
+Epoch 108: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.4132 - acc: 0.8654 - val_loss: 0.5531 - val_acc: 0.8292
+Epoch 109/200
+120/120 [==============================] - ETA: 0s - loss: 0.3900 - acc: 0.8733
+Epoch 109: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3900 - acc: 0.8733 - val_loss: 0.7386 - val_acc: 0.7667
+Epoch 110/200
+120/120 [==============================] - ETA: 0s - loss: 0.4200 - acc: 0.8650
+Epoch 110: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.4200 - acc: 0.8650 - val_loss: 0.3613 - val_acc: 0.8925
+Epoch 111/200
+120/120 [==============================] - ETA: 0s - loss: 0.3565 - acc: 0.8871
+Epoch 111: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3565 - acc: 0.8871 - val_loss: 0.4795 - val_acc: 0.8375
+Epoch 112/200
+120/120 [==============================] - ETA: 0s - loss: 0.3945 - acc: 0.8721
+Epoch 112: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3945 - acc: 0.8721 - val_loss: 0.5382 - val_acc: 0.8408
+Epoch 113/200
+120/120 [==============================] - ETA: 0s - loss: 0.3623 - acc: 0.8825
+Epoch 113: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3623 - acc: 0.8825 - val_loss: 0.2973 - val_acc: 0.9033
+Epoch 114/200
+120/120 [==============================] - ETA: 0s - loss: 0.4115 - acc: 0.8658
+Epoch 114: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 110ms/step - loss: 0.4115 - acc: 0.8658 - val_loss: 0.7889 - val_acc: 0.7683
+Epoch 115/200
+120/120 [==============================] - ETA: 0s - loss: 0.3805 - acc: 0.8779
+Epoch 115: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.3805 - acc: 0.8779 - val_loss: 0.5414 - val_acc: 0.8150
+Epoch 116/200
+120/120 [==============================] - ETA: 0s - loss: 0.3736 - acc: 0.8792
+Epoch 116: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3736 - acc: 0.8792 - val_loss: 0.5131 - val_acc: 0.8458
+Epoch 117/200
+120/120 [==============================] - ETA: 0s - loss: 0.3761 - acc: 0.8783
+Epoch 117: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 108ms/step - loss: 0.3761 - acc: 0.8783 - val_loss: 0.2788 - val_acc: 0.9125
+Epoch 118/200
+120/120 [==============================] - ETA: 0s - loss: 0.3878 - acc: 0.8779
+Epoch 118: val_acc did not improve from 0.91833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3878 - acc: 0.8779 - val_loss: 0.4398 - val_acc: 0.8475
+Epoch 119/200
+120/120 [==============================] - ETA: 0s - loss: 0.3485 - acc: 0.8858
+Epoch 119: val_acc improved from 0.91833 to 0.93250, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 110ms/step - loss: 0.3485 - acc: 0.8858 - val_loss: 0.2247 - val_acc: 0.9325
+Epoch 120/200
+120/120 [==============================] - ETA: 0s - loss: 0.3891 - acc: 0.8742
+Epoch 120: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3891 - acc: 0.8742 - val_loss: 0.5093 - val_acc: 0.8308
+Epoch 121/200
+120/120 [==============================] - ETA: 0s - loss: 0.3722 - acc: 0.8825
+Epoch 121: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3722 - acc: 0.8825 - val_loss: 0.3637 - val_acc: 0.8958
+Epoch 122/200
+120/120 [==============================] - ETA: 0s - loss: 0.3468 - acc: 0.8850
+Epoch 122: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3468 - acc: 0.8850 - val_loss: 0.3299 - val_acc: 0.8975
+Epoch 123/200
+120/120 [==============================] - ETA: 0s - loss: 0.3544 - acc: 0.8942
+Epoch 123: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3544 - acc: 0.8942 - val_loss: 0.3415 - val_acc: 0.8925
+Epoch 124/200
+120/120 [==============================] - ETA: 0s - loss: 0.3436 - acc: 0.8875
+Epoch 124: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 110ms/step - loss: 0.3436 - acc: 0.8875 - val_loss: 0.6251 - val_acc: 0.7842
+Epoch 125/200
+120/120 [==============================] - ETA: 0s - loss: 0.3483 - acc: 0.8888
+Epoch 125: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3483 - acc: 0.8888 - val_loss: 0.3465 - val_acc: 0.8833
+Epoch 126/200
+120/120 [==============================] - ETA: 0s - loss: 0.3603 - acc: 0.8800
+Epoch 126: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 110ms/step - loss: 0.3603 - acc: 0.8800 - val_loss: 0.3696 - val_acc: 0.8725
+Epoch 127/200
+120/120 [==============================] - ETA: 0s - loss: 0.3722 - acc: 0.8863
+Epoch 127: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3722 - acc: 0.8863 - val_loss: 0.9551 - val_acc: 0.7492
+Epoch 128/200
+120/120 [==============================] - ETA: 0s - loss: 0.3768 - acc: 0.8771
+Epoch 128: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3768 - acc: 0.8771 - val_loss: 0.5360 - val_acc: 0.8508
+Epoch 129/200
+120/120 [==============================] - ETA: 0s - loss: 0.3546 - acc: 0.8892
+Epoch 129: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 108ms/step - loss: 0.3546 - acc: 0.8892 - val_loss: 0.7627 - val_acc: 0.7733
+Epoch 130/200
+120/120 [==============================] - ETA: 0s - loss: 0.3362 - acc: 0.8858
+Epoch 130: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3362 - acc: 0.8858 - val_loss: 0.5796 - val_acc: 0.8233
+Epoch 131/200
+120/120 [==============================] - ETA: 0s - loss: 0.3332 - acc: 0.8892
+Epoch 131: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 108ms/step - loss: 0.3332 - acc: 0.8892 - val_loss: 0.5106 - val_acc: 0.8700
+Epoch 132/200
+120/120 [==============================] - ETA: 0s - loss: 0.3266 - acc: 0.8933
+Epoch 132: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3266 - acc: 0.8933 - val_loss: 0.5870 - val_acc: 0.8192
+Epoch 133/200
+120/120 [==============================] - ETA: 0s - loss: 0.3508 - acc: 0.8850
+Epoch 133: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 108ms/step - loss: 0.3508 - acc: 0.8850 - val_loss: 0.6653 - val_acc: 0.7975
+Epoch 134/200
+120/120 [==============================] - ETA: 0s - loss: 0.3267 - acc: 0.8929
+Epoch 134: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3267 - acc: 0.8929 - val_loss: 0.3214 - val_acc: 0.8933
+Epoch 135/200
+120/120 [==============================] - ETA: 0s - loss: 0.3274 - acc: 0.8946
+Epoch 135: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 108ms/step - loss: 0.3274 - acc: 0.8946 - val_loss: 0.5112 - val_acc: 0.8342
+Epoch 136/200
+120/120 [==============================] - ETA: 0s - loss: 0.3183 - acc: 0.8942
+Epoch 136: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 108ms/step - loss: 0.3183 - acc: 0.8942 - val_loss: 0.4586 - val_acc: 0.8525
+Epoch 137/200
+120/120 [==============================] - ETA: 0s - loss: 0.3244 - acc: 0.8983
+Epoch 137: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3244 - acc: 0.8983 - val_loss: 0.5916 - val_acc: 0.8033
+Epoch 138/200
+120/120 [==============================] - ETA: 0s - loss: 0.3146 - acc: 0.8975
+Epoch 138: val_acc did not improve from 0.93250
+120/120 [==============================] - 14s 114ms/step - loss: 0.3146 - acc: 0.8975 - val_loss: 0.5102 - val_acc: 0.8508
+Epoch 139/200
+120/120 [==============================] - ETA: 0s - loss: 0.5836 - acc: 0.8283
+Epoch 139: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 108ms/step - loss: 0.5836 - acc: 0.8283 - val_loss: 190.5355 - val_acc: 0.2717
+Epoch 140/200
+120/120 [==============================] - ETA: 0s - loss: 0.5939 - acc: 0.8133
+Epoch 140: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.5939 - acc: 0.8133 - val_loss: 0.5482 - val_acc: 0.8142
+Epoch 141/200
+120/120 [==============================] - ETA: 0s - loss: 0.4022 - acc: 0.8717
+Epoch 141: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.4022 - acc: 0.8717 - val_loss: 1.3171 - val_acc: 0.6625
+Epoch 142/200
+120/120 [==============================] - ETA: 0s - loss: 0.3577 - acc: 0.8833
+Epoch 142: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3577 - acc: 0.8833 - val_loss: 0.7126 - val_acc: 0.7833
+Epoch 143/200
+120/120 [==============================] - ETA: 0s - loss: 0.4751 - acc: 0.8517
+Epoch 143: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.4751 - acc: 0.8517 - val_loss: 1.2580 - val_acc: 0.6675
+Epoch 144/200
+120/120 [==============================] - ETA: 0s - loss: 0.3802 - acc: 0.8833
+Epoch 144: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3802 - acc: 0.8833 - val_loss: 0.4238 - val_acc: 0.8683
+Epoch 145/200
+120/120 [==============================] - ETA: 0s - loss: 0.4738 - acc: 0.8496
+Epoch 145: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 108ms/step - loss: 0.4738 - acc: 0.8496 - val_loss: 0.2894 - val_acc: 0.9025
+Epoch 146/200
+120/120 [==============================] - ETA: 0s - loss: 0.3559 - acc: 0.8883
+Epoch 146: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3559 - acc: 0.8883 - val_loss: 0.2738 - val_acc: 0.9167
+Epoch 147/200
+120/120 [==============================] - ETA: 0s - loss: 0.3134 - acc: 0.8988
+Epoch 147: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3134 - acc: 0.8988 - val_loss: 0.3111 - val_acc: 0.9017
+Epoch 148/200
+120/120 [==============================] - ETA: 0s - loss: 0.3343 - acc: 0.8879
+Epoch 148: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3343 - acc: 0.8879 - val_loss: 0.6150 - val_acc: 0.8108
+Epoch 149/200
+120/120 [==============================] - ETA: 0s - loss: 0.3235 - acc: 0.8950
+Epoch 149: val_acc did not improve from 0.93250
+120/120 [==============================] - 13s 109ms/step - loss: 0.3235 - acc: 0.8950 - val_loss: 0.6372 - val_acc: 0.8092
+Epoch 150/200
+120/120 [==============================] - ETA: 0s - loss: 0.3457 - acc: 0.8992
+Epoch 150: val_acc improved from 0.93250 to 0.93500, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 110ms/step - loss: 0.3457 - acc: 0.8992 - val_loss: 0.2251 - val_acc: 0.9350
+Epoch 151/200
+120/120 [==============================] - ETA: 0s - loss: 0.2737 - acc: 0.9142
+Epoch 151: val_acc did not improve from 0.93500
+120/120 [==============================] - 13s 109ms/step - loss: 0.2737 - acc: 0.9142 - val_loss: 0.3201 - val_acc: 0.9000
+Epoch 152/200
+120/120 [==============================] - ETA: 0s - loss: 0.3312 - acc: 0.8950
+Epoch 152: val_acc did not improve from 0.93500
+120/120 [==============================] - 13s 109ms/step - loss: 0.3312 - acc: 0.8950 - val_loss: 2.6015 - val_acc: 0.4775
+Epoch 153/200
+120/120 [==============================] - ETA: 0s - loss: 0.3329 - acc: 0.8913
+Epoch 153: val_acc did not improve from 0.93500
+120/120 [==============================] - 13s 108ms/step - loss: 0.3329 - acc: 0.8913 - val_loss: 0.4927 - val_acc: 0.8808
+Epoch 154/200
+120/120 [==============================] - ETA: 0s - loss: 0.3073 - acc: 0.9025
+Epoch 154: val_acc did not improve from 0.93500
+120/120 [==============================] - 13s 108ms/step - loss: 0.3073 - acc: 0.9025 - val_loss: 0.8856 - val_acc: 0.7350
+Epoch 155/200
+120/120 [==============================] - ETA: 0s - loss: 0.3109 - acc: 0.9046
+Epoch 155: val_acc did not improve from 0.93500
+120/120 [==============================] - 13s 109ms/step - loss: 0.3109 - acc: 0.9046 - val_loss: 0.5725 - val_acc: 0.8225
+Epoch 156/200
+120/120 [==============================] - ETA: 0s - loss: 0.3041 - acc: 0.9071
+Epoch 156: val_acc did not improve from 0.93500
+120/120 [==============================] - 13s 109ms/step - loss: 0.3041 - acc: 0.9071 - val_loss: 0.5588 - val_acc: 0.8267
+Epoch 157/200
+120/120 [==============================] - ETA: 0s - loss: 0.3124 - acc: 0.9058
+Epoch 157: val_acc did not improve from 0.93500
+120/120 [==============================] - 13s 109ms/step - loss: 0.3124 - acc: 0.9058 - val_loss: 0.6064 - val_acc: 0.8192
+Epoch 158/200
+120/120 [==============================] - ETA: 0s - loss: 0.3550 - acc: 0.8871
+Epoch 158: val_acc improved from 0.93500 to 0.94833, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 111ms/step - loss: 0.3550 - acc: 0.8871 - val_loss: 0.1736 - val_acc: 0.9483
+Epoch 159/200
+120/120 [==============================] - ETA: 0s - loss: 0.2868 - acc: 0.9104
+Epoch 159: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2868 - acc: 0.9104 - val_loss: 0.4788 - val_acc: 0.8375
+Epoch 160/200
+120/120 [==============================] - ETA: 0s - loss: 0.4678 - acc: 0.8533
+Epoch 160: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 110ms/step - loss: 0.4678 - acc: 0.8533 - val_loss: 0.4186 - val_acc: 0.8717
+Epoch 161/200
+120/120 [==============================] - ETA: 0s - loss: 0.2931 - acc: 0.9075
+Epoch 161: val_acc did not improve from 0.94833
+120/120 [==============================] - 14s 114ms/step - loss: 0.2931 - acc: 0.9075 - val_loss: 0.3239 - val_acc: 0.8925
+Epoch 162/200
+120/120 [==============================] - ETA: 0s - loss: 0.3220 - acc: 0.8967
+Epoch 162: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3220 - acc: 0.8967 - val_loss: 0.2765 - val_acc: 0.9125
+Epoch 163/200
+120/120 [==============================] - ETA: 0s - loss: 0.3065 - acc: 0.9013
+Epoch 163: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3065 - acc: 0.9013 - val_loss: 0.9579 - val_acc: 0.7283
+Epoch 164/200
+120/120 [==============================] - ETA: 0s - loss: 0.2554 - acc: 0.9158
+Epoch 164: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 108ms/step - loss: 0.2554 - acc: 0.9158 - val_loss: 0.4303 - val_acc: 0.8683
+Epoch 165/200
+120/120 [==============================] - ETA: 0s - loss: 0.2831 - acc: 0.9054
+Epoch 165: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 108ms/step - loss: 0.2831 - acc: 0.9054 - val_loss: 0.2437 - val_acc: 0.9150
+Epoch 166/200
+120/120 [==============================] - ETA: 0s - loss: 0.3139 - acc: 0.9021
+Epoch 166: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3139 - acc: 0.9021 - val_loss: 1.7102 - val_acc: 0.5942
+Epoch 167/200
+120/120 [==============================] - ETA: 0s - loss: 0.3005 - acc: 0.9083
+Epoch 167: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 108ms/step - loss: 0.3005 - acc: 0.9083 - val_loss: 0.3683 - val_acc: 0.8825
+Epoch 168/200
+120/120 [==============================] - ETA: 0s - loss: 0.2719 - acc: 0.9125
+Epoch 168: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 108ms/step - loss: 0.2719 - acc: 0.9125 - val_loss: 0.5132 - val_acc: 0.8658
+Epoch 169/200
+120/120 [==============================] - ETA: 0s - loss: 0.3057 - acc: 0.9042
+Epoch 169: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 108ms/step - loss: 0.3057 - acc: 0.9042 - val_loss: 0.3849 - val_acc: 0.8833
+Epoch 170/200
+120/120 [==============================] - ETA: 0s - loss: 0.2723 - acc: 0.9175
+Epoch 170: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2723 - acc: 0.9175 - val_loss: 0.6192 - val_acc: 0.8233
+Epoch 171/200
+120/120 [==============================] - ETA: 0s - loss: 0.2543 - acc: 0.9212
+Epoch 171: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 108ms/step - loss: 0.2543 - acc: 0.9212 - val_loss: 0.3058 - val_acc: 0.8975
+Epoch 172/200
+120/120 [==============================] - ETA: 0s - loss: 0.2838 - acc: 0.9121
+Epoch 172: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2838 - acc: 0.9121 - val_loss: 0.2574 - val_acc: 0.9250
+Epoch 173/200
+120/120 [==============================] - ETA: 0s - loss: 0.2706 - acc: 0.9087
+Epoch 173: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2706 - acc: 0.9087 - val_loss: 0.8394 - val_acc: 0.7650
+Epoch 174/200
+120/120 [==============================] - ETA: 0s - loss: 0.2611 - acc: 0.9179
+Epoch 174: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2611 - acc: 0.9179 - val_loss: 2.7672 - val_acc: 0.4583
+Epoch 175/200
+120/120 [==============================] - ETA: 0s - loss: 0.2948 - acc: 0.9092
+Epoch 175: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2948 - acc: 0.9092 - val_loss: 0.4579 - val_acc: 0.8792
+Epoch 176/200
+120/120 [==============================] - ETA: 0s - loss: 0.2767 - acc: 0.9142
+Epoch 176: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2767 - acc: 0.9142 - val_loss: 0.4291 - val_acc: 0.8758
+Epoch 177/200
+120/120 [==============================] - ETA: 0s - loss: 0.2612 - acc: 0.9204
+Epoch 177: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2612 - acc: 0.9204 - val_loss: 0.3574 - val_acc: 0.8783
+Epoch 178/200
+120/120 [==============================] - ETA: 0s - loss: 0.2985 - acc: 0.9062
+Epoch 178: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 111ms/step - loss: 0.2985 - acc: 0.9062 - val_loss: 0.2619 - val_acc: 0.9133
+Epoch 179/200
+120/120 [==============================] - ETA: 0s - loss: 0.2776 - acc: 0.9067
+Epoch 179: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2776 - acc: 0.9067 - val_loss: 0.3192 - val_acc: 0.9017
+Epoch 180/200
+120/120 [==============================] - ETA: 0s - loss: 0.2538 - acc: 0.9162
+Epoch 180: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2538 - acc: 0.9162 - val_loss: 0.4260 - val_acc: 0.8625
+Epoch 181/200
+120/120 [==============================] - ETA: 0s - loss: 0.2921 - acc: 0.9054
+Epoch 181: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 108ms/step - loss: 0.2921 - acc: 0.9054 - val_loss: 0.7383 - val_acc: 0.7742
+Epoch 182/200
+120/120 [==============================] - ETA: 0s - loss: 0.2471 - acc: 0.9183
+Epoch 182: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2471 - acc: 0.9183 - val_loss: 0.5557 - val_acc: 0.8308
+Epoch 183/200
+120/120 [==============================] - ETA: 0s - loss: 0.2667 - acc: 0.9125
+Epoch 183: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2667 - acc: 0.9125 - val_loss: 0.3492 - val_acc: 0.9183
+Epoch 184/200
+120/120 [==============================] - ETA: 0s - loss: 0.2483 - acc: 0.9217
+Epoch 184: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 110ms/step - loss: 0.2483 - acc: 0.9217 - val_loss: 0.4251 - val_acc: 0.8700
+Epoch 185/200
+120/120 [==============================] - ETA: 0s - loss: 0.3064 - acc: 0.9029
+Epoch 185: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.3064 - acc: 0.9029 - val_loss: 0.1747 - val_acc: 0.9467
+Epoch 186/200
+120/120 [==============================] - ETA: 0s - loss: 0.2455 - acc: 0.9192
+Epoch 186: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 110ms/step - loss: 0.2455 - acc: 0.9192 - val_loss: 0.3243 - val_acc: 0.9025
+Epoch 187/200
+120/120 [==============================] - ETA: 0s - loss: 0.2600 - acc: 0.9146
+Epoch 187: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 108ms/step - loss: 0.2600 - acc: 0.9146 - val_loss: 0.4216 - val_acc: 0.9142
+Epoch 188/200
+120/120 [==============================] - ETA: 0s - loss: 0.2553 - acc: 0.9162
+Epoch 188: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2553 - acc: 0.9162 - val_loss: 0.6134 - val_acc: 0.8367
+Epoch 189/200
+120/120 [==============================] - ETA: 0s - loss: 0.2605 - acc: 0.9133
+Epoch 189: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2605 - acc: 0.9133 - val_loss: 0.4474 - val_acc: 0.8550
+Epoch 190/200
+120/120 [==============================] - ETA: 0s - loss: 0.3441 - acc: 0.8983
+Epoch 190: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 110ms/step - loss: 0.3441 - acc: 0.8983 - val_loss: 0.2046 - val_acc: 0.9400
+Epoch 191/200
+120/120 [==============================] - ETA: 0s - loss: 0.2519 - acc: 0.9192
+Epoch 191: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2519 - acc: 0.9192 - val_loss: 0.3062 - val_acc: 0.9000
+Epoch 192/200
+120/120 [==============================] - ETA: 0s - loss: 0.2509 - acc: 0.9233
+Epoch 192: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 110ms/step - loss: 0.2509 - acc: 0.9233 - val_loss: 0.3047 - val_acc: 0.9092
+Epoch 193/200
+120/120 [==============================] - ETA: 0s - loss: 0.2537 - acc: 0.9171
+Epoch 193: val_acc did not improve from 0.94833
+120/120 [==============================] - 15s 121ms/step - loss: 0.2537 - acc: 0.9171 - val_loss: 0.4662 - val_acc: 0.8525
+Epoch 194/200
+120/120 [==============================] - ETA: 0s - loss: 0.2258 - acc: 0.9275
+Epoch 194: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 111ms/step - loss: 0.2258 - acc: 0.9275 - val_loss: 0.2218 - val_acc: 0.9342
+Epoch 195/200
+120/120 [==============================] - ETA: 0s - loss: 0.2615 - acc: 0.9158
+Epoch 195: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2615 - acc: 0.9158 - val_loss: 0.3947 - val_acc: 0.8892
+Epoch 196/200
+120/120 [==============================] - ETA: 0s - loss: 0.2157 - acc: 0.9304
+Epoch 196: val_acc did not improve from 0.94833
+120/120 [==============================] - 13s 109ms/step - loss: 0.2157 - acc: 0.9304 - val_loss: 0.2996 - val_acc: 0.9025
+Epoch 197/200
+120/120 [==============================] - ETA: 0s - loss: 0.2668 - acc: 0.9212
+Epoch 197: val_acc improved from 0.94833 to 0.95333, saving model to checkpoint\weights.best-14.hdf5
+120/120 [==============================] - 13s 111ms/step - loss: 0.2668 - acc: 0.9212 - val_loss: 0.1614 - val_acc: 0.9533
+Epoch 198/200
+120/120 [==============================] - ETA: 0s - loss: 0.2403 - acc: 0.9308
+Epoch 198: val_acc did not improve from 0.95333
+120/120 [==============================] - 13s 110ms/step - loss: 0.2403 - acc: 0.9308 - val_loss: 0.8734 - val_acc: 0.7658
+Epoch 199/200
+120/120 [==============================] - ETA: 0s - loss: 0.2602 - acc: 0.9204
+Epoch 199: val_acc did not improve from 0.95333
+120/120 [==============================] - 13s 109ms/step - loss: 0.2602 - acc: 0.9204 - val_loss: 0.1937 - val_acc: 0.9467
+Epoch 200/200
+120/120 [==============================] - ETA: 0s - loss: 0.2420 - acc: 0.9296
+Epoch 200: val_acc did not improve from 0.95333
+120/120 [==============================] - 13s 109ms/step - loss: 0.2420 - acc: 0.9296 - val_loss: 0.3610 - val_acc: 0.8875
+Found 1200 images belonging to 12 classes.
+C:\********\skyrim_classifier.py:175: UserWarning: `Model.evaluate_generator` is deprecated and will be removed in a future version. Please use `Model.evaluate`, which supports generators.
+  test_loss, test_acc = model.evaluate_generator(test_generator, steps=60)
+test acc: 0.8733333349227905
+
+**non terminal annotation: checkpoint weights test acc: 0.9409999847412109**

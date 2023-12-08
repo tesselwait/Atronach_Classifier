@@ -66,7 +66,7 @@ model.add(layers.BatchNormalization())
 model.add(Dense(100, activation='softmax'))
 
 model.compile(loss=loss_function,
-              optimizer=tfa.optimizers.Lookahead('adam'), #used adam
+              optimizer='adam',
               metrics=['accuracy'])
 
 history = model.fit(input_train, target_train,

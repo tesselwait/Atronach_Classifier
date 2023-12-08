@@ -34,6 +34,8 @@ train_spriggan_dir = os.path.join(train_dir, 'spriggan')
 train_dremora_dir = os.path.join(train_dir, 'dremora')
 train_fox_dir = os.path.join(train_dir, 'fox')
 train_troll_dir = os.path.join(train_dir, 'troll')
+train_elk_dir = os.path.join(train_dir, 'elk')
+train_wolf_dir = os.path.join(train_dir, 'wolf')
 validation_fire_dir = os.path.join(validation_dir, 'fire')
 validation_frost_dir = os.path.join(validation_dir, 'frost')
 validation_storm_dir = os.path.join(validation_dir, 'storm')
@@ -44,7 +46,8 @@ validation_spriggan_dir = os.path.join(validation_dir, 'spriggan')
 validation_dremora_dir = os.path.join(validation_dir, 'dremora')
 validation_fox_dir = os.path.join(validation_dir, 'fox')
 validation_troll_dir = os.path.join(validation_dir, 'troll')
-
+validation_elk_dir = os.path.join(validation_dir, 'elk')
+validation_wolf_dir = os.path.join(validation_dir, 'wolf')
 test_fire_dir = os.path.join(test_dir, 'fire')
 test_frost_dir = os.path.join(test_dir, 'frost')
 test_storm_dir = os.path.join(test_dir, 'storm')
@@ -55,6 +58,8 @@ test_spriggan_dir = os.path.join(test_dir, 'spriggan')
 test_dremora_dir = os.path.join(test_dir, 'dremora')
 test_fox_dir = os.path.join(test_dir, 'fox')
 test_troll_dir = os.path.join(test_dir, 'troll')
+test_elk_dir = os.path.join(test_dir, 'elk')
+test_wolf_dir = os.path.join(test_dir, 'wolf')
 
 print('total training fire images:', len(os.listdir(train_fire_dir)))
 print('total training frost images:', len(os.listdir(train_frost_dir)))
@@ -66,6 +71,8 @@ print('total training spriggan images:', len(os.listdir(train_spriggan_dir)))
 print('total training dremora images:', len(os.listdir(train_dremora_dir)))
 print('total training fox images:', len(os.listdir(train_fox_dir)))
 print('total training troll images:', len(os.listdir(train_troll_dir)))
+print('total training elk images:', len(os.listdir(train_elk_dir)))
+print('total training wolf images:', len(os.listdir(train_wolf_dir)))
 print('total validation fire images:', len(os.listdir(validation_fire_dir)))
 print('total validation frost images:', len(os.listdir(validation_frost_dir)))
 print('total validation storm images:', len(os.listdir(validation_storm_dir)))
@@ -76,6 +83,8 @@ print('total validation spriggan images:', len(os.listdir(validation_spriggan_di
 print('total validation dremora images:', len(os.listdir(validation_dremora_dir)))
 print('total validation fox images:', len(os.listdir(validation_fox_dir)))
 print('total validation troll images:', len(os.listdir(validation_troll_dir)))
+print('total validation elk images:', len(os.listdir(validation_elk_dir)))
+print('total validation wolf images:', len(os.listdir(validation_wolf_dir)))
 print('total test fire images:', len(os.listdir(test_fire_dir)))
 print('total test frost images:', len(os.listdir(test_frost_dir)))
 print('total test storm images:', len(os.listdir(test_storm_dir)))
@@ -86,6 +95,8 @@ print('total test spriggan images:', len(os.listdir(test_spriggan_dir)))
 print('total test dremora images:', len(os.listdir(test_dremora_dir)))
 print('total test fox images:', len(os.listdir(test_fox_dir)))
 print('total test troll images:', len(os.listdir(test_troll_dir)))
+print('total test elk images:', len(os.listdir(test_elk_dir)))
+print('total test wolf images:', len(os.listdir(test_wolf_dir)))
 
 model = models.Sequential()
 model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(480, 854, 3)))
@@ -104,7 +115,6 @@ model.add(layers.Conv2D(128, (3, 3), activation='relu'))
 model.add(layers.MaxPooling2D((2, 2)))
 model.add(layers.Dropout(0.2))
 model.add(layers.BatchNormalization())
-
 model.add(layers.Conv2D(256, (3, 3), activation='relu'))
 model.add(layers.MaxPooling2D((2, 2)))
 
@@ -118,7 +128,7 @@ model.add(layers.Dense(256, activation='relu'))
 model.add(layers.Dropout(0.2))
 model.add(layers.BatchNormalization())
 
-model.add(layers.Dense(10, activation='softmax'))
+model.add(layers.Dense(12, activation='softmax'))
 
 model.summary()
 
@@ -138,62 +148,49 @@ train_datagen = ImageDataGenerator(
     shear_range=0.1,
     zoom_range=0.1,
     horizontal_flip=True)
-
 test_datagen = ImageDataGenerator(rescale=1./255)
-
 train_generator = train_datagen.flow_from_directory(
         train_dir,
         target_size=(480, 854),
         batch_size=20,
         class_mode='categorical')
-
 validation_generator = test_datagen.flow_from_directory(
         validation_dir,
         target_size=(480, 854),
         batch_size=20,
         class_mode='categorical')
-
 for data_batch, labels_batch in train_generator:
     print('data batch shape:', data_batch.shape)
     print('labels batch shape:', labels_batch.shape)
     break
-
 history = model.fit_generator(
       train_generator,
-      steps_per_epoch=100,
+      steps_per_epoch=120,
       epochs=200,
       validation_data=validation_generator,
-      validation_steps=50,
+      validation_steps=60,
       callbacks=callbacks_list)
-
 test_generator = test_datagen.flow_from_directory(
     test_dir,
     target_size=(480, 854),
     batch_size=20,
     class_mode='categorical')
-
-test_loss, test_acc = model.evaluate_generator(test_generator, steps=50)
+test_loss, test_acc = model.evaluate_generator(test_generator, steps=60)
 print('test acc:', test_acc)
 
 model.save('skyrim_forest_model_7.h5')
-
 acc = history.history['acc']
 val_acc = history.history['val_acc']
 loss = history.history['loss']
 val_loss = history.history['val_loss']
-
 epochs = range(len(acc))
-
 plt.plot(epochs, acc, 'bo', label='Training acc')
 plt.plot(epochs, val_acc, 'b', label='Validation acc')
 plt.title('Training and validation accuracy')
 plt.legend()
-
 plt.figure()
-
 plt.plot(epochs, loss, 'bo', label='Training loss')
 plt.plot(epochs, val_loss, 'b', label='Validation loss')
 plt.title('Training and validation loss')
 plt.legend()
-
 plt.show()

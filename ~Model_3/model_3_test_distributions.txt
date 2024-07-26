@@ -1,0 +1,135 @@
+weights.best-3.hdf5
+bandit
+14 -- bandit: 0%, bear: 100%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+26 -- bandit: 41%, bear: 2%, dremora: 1%, elk: 56%, fire: 1%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+84 -- bandit: 14%, bear: 4%, dremora: 5%, elk: 53%, fire: 23%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+85 -- bandit: 3%, bear: 81%, dremora: 1%, elk: 10%, fire: 1%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 1%, wolf: 4%, 
+91 -- bandit: 45%, bear: 0%, dremora: 3%, elk: 51%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 1%, 
+
+bear
+60 -- bandit: 0%, bear: 8%, dremora: 0%, elk: 0%, fire: 92%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+66 -- bandit: 0%, bear: 10%, dremora: 54%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 6%, spriggan: 30%, storm: 0%, troll: 0%, wolf: 0%, 
+70 -- bandit: 21%, bear: 38%, dremora: 0%, elk: 0%, fire: 39%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 1%, wolf: 0%, 
+
+dremora
+40 -- bandit: 2%, bear: 3%, dremora: 41%, elk: 52%, fire: 2%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+42 -- bandit: 0%, bear: 0%, dremora: 18%, elk: 32%, fire: 50%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+
+elk
+22 -- bandit: 0%, bear: 0%, dremora: 88%, elk: 12%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+71 -- bandit: 0%, bear: 0%, dremora: 1%, elk: 13%, fire: 86%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+79 -- bandit: 0%, bear: 0%, dremora: 84%, elk: 15%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+
+fire
+
+fox
+7 -- bandit: 0%, bear: 0%, dremora: 87%, elk: 0%, fire: 3%, fox: 9%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+20 -- bandit: 0%, bear: 0%, dremora: 81%, elk: 6%, fire: 0%, fox: 11%, frost: 0%, mudcrab: 1%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+27 -- bandit: 0%, bear: 12%, dremora: 12%, elk: 33%, fire: 21%, fox: 12%, frost: 0%, mudcrab: 9%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+29 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 59%, fire: 5%, fox: 35%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+31 -- bandit: 0%, bear: 80%, dremora: 0%, elk: 1%, fire: 0%, fox: 13%, frost: 0%, mudcrab: 5%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+38 -- bandit: 0%, bear: 67%, dremora: 0%, elk: 1%, fire: 0%, fox: 7%, frost: 0%, mudcrab: 24%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+40 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 14%, fire: 0%, fox: 38%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 47%, wolf: 0%, 
+44 -- bandit: 0%, bear: 99%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+52 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 8%, fire: 0%, fox: 33%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 57%, wolf: 0%, 
+53 -- bandit: 0%, bear: 0%, dremora: 15%, elk: 82%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 2%, storm: 0%, troll: 0%, wolf: 0%, 
+57 -- bandit: 0%, bear: 0%, dremora: 44%, elk: 7%, fire: 10%, fox: 37%, frost: 0%, mudcrab: 0%, spriggan: 1%, storm: 0%, troll: 0%, wolf: 0%, 
+63 -- bandit: 0%, bear: 3%, dremora: 14%, elk: 6%, fire: 0%, fox: 10%, frost: 0%, mudcrab: 66%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+68 -- bandit: 0%, bear: 0%, dremora: 21%, elk: 76%, fire: 1%, fox: 1%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+79 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 3%, fire: 76%, fox: 20%, frost: 0%, mudcrab: 0%, spriggan: 1%, storm: 0%, troll: 0%, wolf: 0%, 
+
+frost
+39 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 56%, fire: 2%, fox: 0%, frost: 41%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+41 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 79%, fire: 5%, fox: 0%, frost: 16%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+52 -- bandit: 3%, bear: 0%, dremora: 3%, elk: 51%, fire: 0%, fox: 0%, frost: 43%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+68 -- bandit: 3%, bear: 0%, dremora: 17%, elk: 43%, fire: 1%, fox: 0%, frost: 36%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+89 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 17%, fire: 53%, fox: 0%, frost: 30%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+
+mudcrab
+8 -- bandit: 0%, bear: 0%, dremora: 96%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 3%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+13 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 100%, storm: 0%, troll: 0%, wolf: 0%, 
+33 -- bandit: 0%, bear: 0%, dremora: 6%, elk: 0%, fire: 1%, fox: 0%, frost: 0%, mudcrab: 34%, spriggan: 59%, storm: 0%, troll: 0%, wolf: 0%, 
+51 -- bandit: 0%, bear: 0%, dremora: 5%, elk: 49%, fire: 0%, fox: 2%, frost: 0%, mudcrab: 43%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+52 -- bandit: 0%, bear: 0%, dremora: 81%, elk: 1%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 19%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+64 -- bandit: 0%, bear: 0%, dremora: 94%, elk: 0%, fire: 0%, fox: 1%, frost: 0%, mudcrab: 5%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+66 -- bandit: 0%, bear: 0%, dremora: 1%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 18%, spriggan: 81%, storm: 0%, troll: 0%, wolf: 0%, 
+79 -- bandit: 0%, bear: 1%, dremora: 57%, elk: 27%, fire: 11%, fox: 0%, frost: 0%, mudcrab: 4%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+82 -- bandit: 0%, bear: 0%, dremora: 76%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 23%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+84 -- bandit: 4%, bear: 0%, dremora: 26%, elk: 67%, fire: 1%, fox: 0%, frost: 0%, mudcrab: 2%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+89 -- bandit: 0%, bear: 0%, dremora: 75%, elk: 19%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 5%, spriggan: 0%, storm: 0%, troll: 1%, wolf: 0%, 
+90 -- bandit: 0%, bear: 0%, dremora: 77%, elk: 2%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 21%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+98 -- bandit: 0%, bear: 88%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 12%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+
+spriggan
+1 -- bandit: 0%, bear: 0%, dremora: 96%, elk: 1%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 3%, storm: 0%, troll: 0%, wolf: 0%, 
+3 -- bandit: 0%, bear: 0%, dremora: 18%, elk: 16%, fire: 64%, fox: 0%, frost: 0%, mudcrab: 1%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+5 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 73%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 27%, storm: 0%, troll: 0%, wolf: 0%, 
+13 -- bandit: 0%, bear: 0%, dremora: 64%, elk: 6%, fire: 5%, fox: 0%, frost: 0%, mudcrab: 4%, spriggan: 21%, storm: 0%, troll: 0%, wolf: 0%, 
+15 -- bandit: 1%, bear: 33%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 1%, storm: 0%, troll: 0%, wolf: 65%, 
+18 -- bandit: 0%, bear: 0%, dremora: 46%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 17%, spriggan: 36%, storm: 0%, troll: 0%, wolf: 0%, 
+45 -- bandit: 12%, bear: 0%, dremora: 18%, elk: 1%, fire: 60%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 8%, storm: 0%, troll: 0%, wolf: 0%, 
+76 -- bandit: 0%, bear: 0%, dremora: 82%, elk: 2%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 16%, storm: 0%, troll: 0%, wolf: 0%, 
+78 -- bandit: 0%, bear: 0%, dremora: 99%, elk: 1%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+90 -- bandit: 0%, bear: 0%, dremora: 91%, elk: 2%, fire: 5%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 1%, storm: 0%, troll: 0%, wolf: 0%, 
+94 -- bandit: 0%, bear: 0%, dremora: 95%, elk: 3%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 2%, storm: 0%, troll: 0%, wolf: 0%, 
+
+storm
+16 -- bandit: 11%, bear: 0%, dremora: 81%, elk: 1%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 1%, storm: 5%, troll: 0%, wolf: 2%, 
+
+troll
+3 -- bandit: 73%, bear: 0%, dremora: 0%, elk: 10%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 17%, wolf: 0%, 
+11 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 62%, fire: 0%, fox: 1%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 37%, wolf: 0%, 
+34 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 99%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+51 -- bandit: 0%, bear: 0%, dremora: 11%, elk: 88%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 1%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+56 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 95%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 5%, wolf: 0%, 
+68 -- bandit: 2%, bear: 0%, dremora: 1%, elk: 63%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 34%, wolf: 0%, 
+84 -- bandit: 0%, bear: 1%, dremora: 0%, elk: 78%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 20%, wolf: 0%, 
+85 -- bandit: 1%, bear: 0%, dremora: 10%, elk: 51%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 38%, wolf: 0%, 
+93 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 89%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 10%, wolf: 0%, 
+96 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 1%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 99%, 
+
+wolf
+2 -- bandit: 1%, bear: 2%, dremora: 0%, elk: 24%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 60%, wolf: 12%, 
+3 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 98%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 1%, 
+7 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 92%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 8%, 
+8 -- bandit: 0%, bear: 68%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 5%, wolf: 26%, 
+10 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 91%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 1%, wolf: 7%, 
+15 -- bandit: 1%, bear: 3%, dremora: 0%, elk: 16%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 54%, wolf: 26%, 
+18 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 93%, wolf: 6%, 
+22 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 87%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 12%, 
+23 -- bandit: 2%, bear: 20%, dremora: 0%, elk: 73%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 4%, 
+25 -- bandit: 5%, bear: 1%, dremora: 8%, elk: 71%, fire: 2%, fox: 0%, frost: 1%, mudcrab: 0%, spriggan: 8%, storm: 0%, troll: 0%, wolf: 3%, 
+26 -- bandit: 82%, bear: 2%, dremora: 1%, elk: 8%, fire: 6%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+28 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 65%, wolf: 34%, 
+30 -- bandit: 0%, bear: 1%, dremora: 0%, elk: 2%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 80%, wolf: 16%, 
+32 -- bandit: 78%, bear: 0%, dremora: 6%, elk: 4%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 5%, storm: 0%, troll: 0%, wolf: 6%, 
+33 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 100%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+37 -- bandit: 0%, bear: 60%, dremora: 0%, elk: 2%, fire: 8%, fox: 1%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 1%, wolf: 28%, 
+38 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 100%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+40 -- bandit: 0%, bear: 62%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 8%, wolf: 30%, 
+42 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 97%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 3%, 
+44 -- bandit: 82%, bear: 9%, dremora: 4%, elk: 1%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 3%, 
+45 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 100%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+48 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 1%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 90%, wolf: 9%, 
+49 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 100%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 0%, 
+50 -- bandit: 1%, bear: 56%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 43%, 
+51 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 93%, wolf: 7%, 
+53 -- bandit: 0%, bear: 0%, dremora: 4%, elk: 79%, fire: 13%, fox: 3%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 1%, 
+54 -- bandit: 0%, bear: 0%, dremora: 41%, elk: 26%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 15%, wolf: 18%, 
+58 -- bandit: 9%, bear: 1%, dremora: 1%, elk: 79%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 10%, 
+60 -- bandit: 0%, bear: 53%, dremora: 0%, elk: 0%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 42%, wolf: 5%, 
+69 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 98%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 2%, 
+73 -- bandit: 0%, bear: 29%, dremora: 2%, elk: 45%, fire: 0%, fox: 10%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 6%, wolf: 6%, 
+75 -- bandit: 49%, bear: 0%, dremora: 0%, elk: 1%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 18%, wolf: 33%, 
+77 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 80%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 19%, 
+79 -- bandit: 0%, bear: 42%, dremora: 2%, elk: 3%, fire: 4%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 18%, wolf: 30%, 
+80 -- bandit: 7%, bear: 0%, dremora: 0%, elk: 12%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 73%, wolf: 7%, 
+81 -- bandit: 4%, bear: 21%, dremora: 21%, elk: 28%, fire: 5%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 14%, wolf: 7%, 
+82 -- bandit: 0%, bear: 0%, dremora: 0%, elk: 99%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 0%, wolf: 1%, 
+86 -- bandit: 1%, bear: 5%, dremora: 1%, elk: 81%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 11%, wolf: 1%, 
+92 -- bandit: 33%, bear: 10%, dremora: 23%, elk: 1%, fire: 2%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 31%, wolf: 2%, 
+95 -- bandit: 0%, bear: 0%, dremora: 6%, elk: 47%, fire: 0%, fox: 4%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 3%, wolf: 40%, 
+97 -- bandit: 0%, bear: 0%, dremora: 1%, elk: 97%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 0%, spriggan: 0%, storm: 0%, troll: 1%, wolf: 1%, 
+99 -- bandit: 0%, bear: 0%, dremora: 1%, elk: 17%, fire: 0%, fox: 0%, frost: 0%, mudcrab: 1%, spriggan: 77%, storm: 0%, troll: 0%, wolf: 4%, 
+
+Misclassified: 109 images.

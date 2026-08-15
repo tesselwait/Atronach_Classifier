@@ -9,6 +9,6 @@ for i in directories:
         if os.path.isfile(item):
             img = Image.open(item)
             f, e = os.path.splitext(item)
-            img.resize((360,360), Image.ANTIALIAS).save(f+'.png')
+            img.resize((426,240), Image.Resampling.LANCZOS).save(f+'.png')
     print(str(i)+" resized")
 print("Job Complete")
